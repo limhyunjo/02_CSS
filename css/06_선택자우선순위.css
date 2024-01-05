@@ -1,0 +1,28 @@
+
+
+/*  */
+
+
+/* 3순위 : 아이디 선택자 */
+
+#test1{
+    color : white; /* 안겹치면 모두 누적됨 */
+    height: 100px;
+    background-color: black;
+}
+
+/* 4순위 :클래스 선택자 */
+.cls1{
+    background-color: green !important;/* !important가 1순위 */
+}
+/* 5순위:태그 선택자  */
+div{
+    width: 200px;/* w200px 엔터 */
+    height: 200px;
+    background-color: red !important;/* bgc */
+
+}
+
+.cls1{
+    background-color: blue !important;
+}
