@@ -129,7 +129,7 @@ nav{
   font-weight: bold;
   color: var(--main-color);
   font-family: '양진체';
-
+ 
   padding: 3px 10px;
   width: 100%;
   text-align: center; /* 글자 가운데 정렬 */
@@ -261,7 +261,7 @@ main{
 .card-thumbnail{
  /* transitin:요소의 변환 시간, 속도 등을 조절하는 속성 */
  /* transitin-duration:요소의 변환 시간 조절 */
- transition-duration: 0.3s;/* 0.25초 */
+ transition-duration: 0.3s;/* 0.3초 */
 }
 
 
@@ -272,14 +272,6 @@ flex-grow: 0;
 flex-shrink: 0;
 
 height: 200px;
-
-/*rgba(R, G, B, A) : Red(0~255), Green(0~255), Blue(0~255), 
-    Alpha(0.0 ~ 1.0 , 투명도)
-
-     R,G,B 값은 0에 가까울수록 어두운 색(검은색)
-     255에 가까울 수록 선명한 색(각 색상이 뚜렷해짐)
-     A값은 0에 가까울 수록 투명, 1에 가까울 수록 불투명
-*/
 background-color: rgba(210,210,210,0.6);
 
 display: flex;
