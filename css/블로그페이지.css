@@ -1,0 +1,88 @@
+:root{
+  --main-color : gray;
+  /* --main-font-size : 20px; */
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* border: 1px solid black;  */
+  /* 완성 시 삭제 예정 */
+}
+
+a{
+  color : black;
+  text-decoration: none; /* 밑줄 제거 */
+}
+
+ul{
+  list-style : none; /* 목록의 스타일(앞에 붙는 점) 제거 */
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+
+  /* min-width/height : 
+    화면(기기, 브라우저) 크기가 작아져도 유지해야 할 최소 크기
+  */
+  min-width: 768px;
+  min-height: 100vh; /* 화면 높이 100% */
+}
+
+/* 웹폰트 추가 */
+/* -> 폰트를 적용하고 싶은 곳에서 
+  font-family: 'GoryeongStrawberry' 작성 */
+  @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+header{
+  padding: 50px 0; /* 상하  좌우 */
+  border-bottom : 2px solid var(--main-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 50px;
+  width: 100%;
+
+  /* 화면이 커져도 width 최대 값은 1200px */
+  max-width: 1200px;
+}
+.head-container>div{
+  height: 70%;
+  display: flex;
+  align-items: center;
+}
+.header-container-left> *{
+  height: 100%;
+
+
+}
+.header-container-right a{
+  font-weight:600;
+  color : var(--main-color);
+  font-size : 0.9em; /* 0.9배 */
+  margin: 0 10px;
+}
+/* nav */
+nav{
+  padding: 5px 10px;
+  border-bottom: 2px solid var(--main-color);
+  
+  background-color: white;
+  position: sticky;
+  top: -1px;
+  z-index: 1000;
+}
