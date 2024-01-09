@@ -1,0 +1,43 @@
+:root{
+    --main-color : gray;
+    /* --main-font-size : 20px; */
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+    /* border: 1px solid black;  */
+    /* 완성 시 삭제 예정 */
+  }
+  
+  a{
+    color : black;
+    text-decoration: none; /* 밑줄 제거 */
+  }
+  
+  ul{
+    list-style : none; /* 목록의 스타일(앞에 붙는 점) 제거 */
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+  
+    /* min-width/height : 
+      화면(기기, 브라우저) 크기가 작아져도 유지해야 할 최소 크기
+    */
+    min-width: 768px;
+    min-height: 100vh; /* 화면 높이 100% */
+  }
+  
+  /* 웹폰트 추가 */
+  /* -> 폰트를 적용하고 싶은 곳에서 
+    font-family: 'GoryeongStrawberry' 작성 */
+  @font-face {
+    font-family: 'GoryeongStrawberry';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-01@1.0/GoryeongStrawberry.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
