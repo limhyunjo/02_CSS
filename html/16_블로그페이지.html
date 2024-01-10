@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>기본 사이트</title>
-    <link rel="stylesheet" href="../css/블로그페이지.css">
+    <link rel="stylesheet" href="../css/16_블로그페이지.css">
 </head>
 <body id="body-top">
     <!-- 화면 상단 부분 헤더 -->
@@ -15,12 +15,8 @@
 
        
        
-        <div class="header-container-left">
-            <a href="#"class=logo>
-                
-                <img src="../images/logo.png" alt="">
-                    <!-- 이미지는 나중에 찾기 -->
-            </a>
+        <div class="header-container-center">
+            <a href="#"class="logo">lactea</a>
       
 
         </div>
@@ -28,22 +24,17 @@
         <div class="header-container-right">
             <a href="#">찾기</a>
             <a href="#">공유하기</a>
-      
-
         </div>
      
-   
-   
-   
-   
-   
-    </header><!-- 가운데에 로고 -->
-   
-   
-   
-   <nav>
+    </section>
     
-    <ul class="nabar">
+  </header>
+   
+   
+   
+  <nav>
+    
+    <ul class="navbar">
       <li> <a href="#"></a>글쓰기</li>
       <li> <a href="#"></a>최근 본 글</li>
       <li> <a href="#"></a>이웃 새 글</li>
@@ -53,27 +44,107 @@
       
 
     </ul>
-
-
-
-
-   </nav>
+  </nav>
    
-   
+
    
    
    <main>
-     <!-- 배너  -->
-     <section>
+
+    <section class="content-container">
+
+       
+        <div class="content-row">
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BIlfp-YmzHE?si=OnD2T2QBezgN90yo" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+           allowfullscreen></iframe>
+
+         
+  
+         <div class="description-col">
+            <h3><a href="#" class="highlight-diary"> 나흘간의 눈 내리는 일본 여행기 </a></h3>
+            <hr>
+            <p>
+            
+             일본 여행가기 전의 여행지 선택하기 좋은 영상 공유
+
+            </p>
+          </div>
+  
+        </div>
         
-     </section>
+        <div class="content-row">
+  
+            <div class="description-col">
+               <h3><a href="#"class="highlight-travel"> 일본 관광 사이트 </a></h3>
+               <hr>
+               <p>
+                <iframe src="https://livejapan.com/ko/go-visiting/" frameborder="0" width=400px height=320px></iframe>
+                <P>
+               </p>
+             </div>
+     
+         </div>
 
-   </main><!-- section 4개 맨 첫번째 는 공지 배너로 시간차로 바뀜
-  두번째 배너는 뉴스 기사 사진과 옆에 설명 
- 세번재는 유툽 링크 (두번째와 세번째는 같은 칸에 들어감)
-  네번째는 사진들 위에 커서 올리면 확대됨
+         <div class="content-row">
+  
+          <div class="description-col">
+             <h3><a href="#"class="highlight-memo"></a></h3>
+             <hr>
+             <p>
+              <A href="https://www.japan.travel/ko/story/top-10-japan-travel-hacks/"> 일본 여행가기 전 꿀팁 </A>
+                /
+              
+              <P>
+             </p>
+           </div>
+   
+       </div>
 
- -->
+           <!-- 카드 형태 요소를 모아둔 행 -->
+      <div class="content-row card-container">
+
+        <div class="card-item">
+          <a href="#" class="card">
+            <div class="card-thumbnail-container">
+              <img class="card-thumbnail" src="../images/풍경/astronomy.jpg" alt="카드 썸네일">
+            </div>
+            <p class="card-content">우주</p>
+          </a>
+        </div>
+
+        <div class="card-item">
+          <a href="#" class="card">
+            <div class="card-thumbnail-container">
+              <img class="card-thumbnail" src="../images/풍경/road.jpg" alt="카드 썸네일">
+            </div>
+            <p class="card-content">길</p>
+          </a>
+        </div>
+
+        <div class="card-item">
+          <a href="#" class="card">
+            <div class="card-thumbnail-container">
+              <img class="card-thumbnail" src="../images/풍경/forest.jpg" alt="카드 썸네일">
+            </div>
+            <p class="card-content">숲</p>
+          </a>
+        </div>
+
+        <div class="card-item">
+          <a href="#" class="card">
+            <div class="card-thumbnail-container">
+              <img class="card-thumbnail" src="../images/풍경/landscape.jpg" alt="카드 썸네일">
+            </div>
+            <p class="card-content">호수</p>
+          </a>
+        </div>
+   
+
+   </main>
+ 
 
 
    
@@ -96,16 +167,16 @@
    
    
     
-        <aside>
-            <a href="#"> 최근 본 글</a>
-            <a href="#"> 글쓰기</a>
-            <a href="#">기록 </a>
-            <a href="#"> 이웃 새 글</a>
-            <hr>
-            <div class="top-button">
-                <a href="#body-top">맨 위로</a>
-            </div><!-- 위로 이동 버튼 -->
-        </aside>
+  <aside>
+    <a href="#"> 최근 본 글</a>
+    <a href="#"> 글쓰기</a>
+    <a href="#">기록 </a>
+    <a href="#"> 이웃 새 글</a>
+    <hr>
+    <div class="top-button">
+        <a href="#body-top">맨 위로</a>
+    </div><!-- 위로 이동 버튼 -->
+  </aside>
 
     <!-- 최근 본 글 찾기 글쓰기 기록 위로 올라가는 화살표 버튼  -->
 
